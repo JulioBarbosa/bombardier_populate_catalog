@@ -12,7 +12,7 @@ PopulateCatalog is a Magento 2 module designed to automate the process of popula
 
 ## Installation
 1. **Download the Module**
-    - Via Composer: Run `composer require bombardier/populatecatalog`.
+    - Via Composer: Run `composer require juliobarbosa/bombardier_populatecatalog`.
     - Manually: Download and place it into `app/code/Bombardier/PopulateCatalog`.
 
 2. **Enable the Module**
