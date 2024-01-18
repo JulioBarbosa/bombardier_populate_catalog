@@ -1,5 +1,5 @@
 {
-  "name": "bombardier/populate-catalog",
+  "name": "juliobarbosa/bombardier-populate-catalog",
   "description": "Populate catalog from API to test at Bombiardier",
   "type": "magento2-module",
   "version": "1.0.0",
