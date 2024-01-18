@@ -153,17 +153,19 @@ class ProductManagement implements ProductManagementInterface
     }
 
     /**
-     * Felete Product
+     * Delete Product
      *
      * @param string $sku
      * @return void
-     * @throws StateException
-     * @throws NoSuchEntityException
      */
     public function deleteProduct(string $sku): void
     {
-        $product = $this->productRepository->get($sku);
-        $this->productRepository->delete($product);
+        try {
+            $product = $this->productRepository->get($sku);
+            $this->productRepository->delete($product);
+        } catch (Exception $exception) {
+
+        }
     }
 
     /**
