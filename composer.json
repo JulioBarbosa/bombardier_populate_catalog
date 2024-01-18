@@ -2,7 +2,7 @@
   "name": "juliobarbosa/bombardier-populate-catalog",
   "description": "Populate catalog from API to test at Bombiardier",
   "type": "magento2-module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": ["OSL-3.0", "AFL-3.0"],
   "require": {
     "php": "~8.1.0",
@@ -20,7 +20,7 @@
     "map": [
       [
         "*",
-        "Bombardier/PopulateCatalog"
+        "JulioBarbosa/BombardierPopulateCatalog"
       ]
     ]
   }
