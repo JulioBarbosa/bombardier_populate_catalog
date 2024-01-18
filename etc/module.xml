@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+  Magento Module developed by Júlio
+
+  @author Júlio Barbosa de Oliveira
+  @copyright (c) 2024.
+
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Bombardier_PopulateCatalog" setup_version="1.0.0">
+    </module>
+</config>

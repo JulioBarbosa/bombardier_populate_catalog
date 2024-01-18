@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+  Magento Module developed by Júlio
+
+  @author Júlio Barbosa de Oliveira
+   @copyright 2024.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/system_file.xsd">
+    <system>
+        <tab id="bombardier" translate="label" sortOrder="100">
+            <label>Bombardier</label>
+        </tab>
+        <section id="bombardier" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Catalog Import Configuration</label>
+            <tab>bombardier</tab>
+            <resource>Bombardier_PopulateCatalog::config_bombardier</resource>
+
+            <group id="email_settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Email Settings</label>
+                <field id="email_recipients" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email Recipients</label>
+                    <comment><![CDATA[Enter email addresses, separated by commas.]]></comment>
+                    <validate>validate-emails</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+  Magento Module developed by Júlio
+
+  @author Júlio Barbosa de Oliveira
+  @copyright (c) 2024.
+
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="bombardier_cron_group">
+        <job name="populate_catalog_update" instance="Bombardier\PopulateCatalog\Cron\CatalogUpdate" method="execute">
+            <schedule>0 4 * * *</schedule>
+        </job>
+        <job name="populate_catalog_send_report" instance="Bombardier\PopulateCatalog\Cron\SendReport" method="execute">
+            <schedule>59 23 * * *</schedule>
+        </job>
+    </group>
+</config>
