@@ -15,5 +15,11 @@
     "psr-4": {
       "JulioBarbosa\\BombardierPopulateCatalog\\": ""
     }
-  }
+  },
+  "authors": [
+      {
+          "name": "Júlio Barbosa de Oliveira",
+          "email": "julio.barbosa.15@gmail.com"
+      }
+  ]
 }
