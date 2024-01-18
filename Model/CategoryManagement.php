@@ -7,10 +7,10 @@
  *
  */
 
-namespace Bombardier\PopulateCatalog\Model;
+namespace JulioBarbosa\BombardierPopulateCatalog\Model;
 
-use Bombardier\PopulateCatalog\Api\CategoryManagementInterface;
-use Bombardier\PopulateCatalog\Model\Api\Client;
+use JulioBarbosa\BombardierPopulateCatalog\Api\CategoryManagementInterface;
+use JulioBarbosa\BombardierPopulateCatalog\Model\Api\Client;
 use Exception;
 use Magento\Catalog\Api\CategoryLinkManagementInterface;
 use Magento\Catalog\Api\CategoryRepositoryInterface;
@@ -80,6 +80,8 @@ class CategoryManagement implements CategoryManagementInterface
     }
 
     /**
+     * Fetch And Process Categories
+     *
      * @return void
      * @throws LocalizedException
      */
@@ -98,6 +100,8 @@ class CategoryManagement implements CategoryManagementInterface
     }
 
     /**
+     * Create Categories
+     *
      * @param int $parentId
      * @param array $categories
      * @return void

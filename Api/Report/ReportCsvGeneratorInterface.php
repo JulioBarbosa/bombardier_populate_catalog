@@ -6,7 +6,7 @@
  *  @copyright 2024.
  */
 
-namespace Bombardier\PopulateCatalog\Api\Report;
+namespace JulioBarbosa\BombardierPopulateCatalog\Api\Report;
 
 interface ReportCsvGeneratorInterface
 {

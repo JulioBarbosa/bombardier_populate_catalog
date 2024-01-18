@@ -7,14 +7,14 @@
 
   -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Bombardier\PopulateCatalog\Api\ProductManagementInterface"
-                type="Bombardier\PopulateCatalog\Model\ProductManagement" />
-    <preference for="Bombardier\PopulateCatalog\Api\CategoryManagementInterface"
-                type="Bombardier\PopulateCatalog\Model\CategoryManagement" />
-    <preference for="Bombardier\PopulateCatalog\Api\Report\ReportCsvGeneratorInterface"
-                type="Bombardier\PopulateCatalog\Model\Report\ReportCsvGenerator" />
-    <preference for="Bombardier\PopulateCatalog\Api\Email\ReportEmailSenderInterface"
-                type="Bombardier\PopulateCatalog\Model\Email\ReportEmailSender" />
+    <preference for="JulioBarbosa\BombardierPopulateCatalog\Api\ProductManagementInterface"
+                type="JulioBarbosa\BombardierPopulateCatalog\Model\ProductManagement" />
+    <preference for="JulioBarbosa\BombardierPopulateCatalog\Api\CategoryManagementInterface"
+                type="JulioBarbosa\BombardierPopulateCatalog\Model\CategoryManagement" />
+    <preference for="JulioBarbosa\BombardierPopulateCatalog\Api\Report\ReportCsvGeneratorInterface"
+                type="JulioBarbosa\BombardierPopulateCatalog\Model\Report\ReportCsvGenerator" />
+    <preference for="JulioBarbosa\BombardierPopulateCatalog\Api\Email\ReportEmailSenderInterface"
+                type="JulioBarbosa\BombardierPopulateCatalog\Model\Email\ReportEmailSender" />
     <preference for="\Magento\Framework\Mail\Template\TransportBuilder"
-                type="\Bombardier\PopulateCatalog\Model\Email\TransportBuilderWithAttachment" />
+                type="\JulioBarbosa\BombardierPopulateCatalog\Model\Email\TransportBuilderWithAttachment" />
 </config>

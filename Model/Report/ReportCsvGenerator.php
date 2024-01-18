@@ -6,9 +6,9 @@
  * @copyright 2024.
  */
 
-namespace Bombardier\PopulateCatalog\Model\Report;
+namespace JulioBarbosa\BombardierPopulateCatalog\Model\Report;
 
-use Bombardier\PopulateCatalog\Api\Report\ReportCsvGeneratorInterface;
+use JulioBarbosa\BombardierPopulateCatalog\Api\Report\ReportCsvGeneratorInterface;
 use DateTime;
 use Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\Framework\Exception\FileSystemException;
@@ -39,6 +39,8 @@ class ReportCsvGenerator implements ReportCsvGeneratorInterface
     }
 
     /**
+     * Generate Csv
+     *
      * @param $reportData
      * @return string
      * @throws FileSystemException
@@ -70,6 +72,8 @@ class ReportCsvGenerator implements ReportCsvGeneratorInterface
     }
 
     /**
+     * Filter Int And String Columns
+     *
      * @param $array
      * @return array
      */

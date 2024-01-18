@@ -7,5 +7,5 @@
   -->
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
-    <template id="report_email_template" label="Report Email Template" file="report_email_template.html" type="html" module="Bombardier_PopulateCatalog" area="frontend"/>
+    <template id="report_email_template" label="Report Email Template" file="report_email_template.html" type="html" module="JulioBarbosa_BombardierPopulateCatalog" area="frontend"/>
 </config>

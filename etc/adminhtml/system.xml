@@ -14,7 +14,7 @@
         <section id="bombardier" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Catalog Import Configuration</label>
             <tab>bombardier</tab>
-            <resource>Bombardier_PopulateCatalog::config_bombardier</resource>
+            <resource>JulioBarbosa_BombardierPopulateCatalog::config_bombardier</resource>
 
             <group id="email_settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Email Settings</label>

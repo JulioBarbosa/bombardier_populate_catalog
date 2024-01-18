@@ -7,13 +7,11 @@
  *
  */
 
-namespace Bombardier\PopulateCatalog\Cron;
+namespace JulioBarbosa\BombardierPopulateCatalog\Cron;
 
-use Bombardier\PopulateCatalog\Api\CategoryManagementInterface;
-use Bombardier\PopulateCatalog\Api\ProductManagementInterface;
-use Bombardier\PopulateCatalog\Api\Report\ReportCsvGeneratorInterface;
-use Magento\Framework\Exception\CronException;
-use function __;
+use JulioBarbosa\BombardierPopulateCatalog\Api\CategoryManagementInterface;
+use JulioBarbosa\BombardierPopulateCatalog\Api\ProductManagementInterface;
+use JulioBarbosa\BombardierPopulateCatalog\Api\Report\ReportCsvGeneratorInterface;
 
 class CatalogUpdate
 {
@@ -46,6 +44,8 @@ class CatalogUpdate
     }
 
     /**
+     * Import Catalog from external api
+     *
      * @return void
      */
     public function execute(): void

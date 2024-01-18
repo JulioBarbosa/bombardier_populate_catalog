@@ -7,9 +7,12 @@
  *
  */
 
-namespace Bombardier\PopulateCatalog\Api;
+namespace JulioBarbosa\BombardierPopulateCatalog\Api;
 
 interface CategoryManagementInterface
 {
+    /**
+     * @return void
+     */
     public function fetchAndProcessCategories(): void;
 }

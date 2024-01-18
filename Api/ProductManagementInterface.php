@@ -7,9 +7,7 @@
  *
  */
 
-namespace Bombardier\PopulateCatalog\Api;
-
-use Magento\Framework\Exception\CronException;
+namespace JulioBarbosa\BombardierPopulateCatalog\Api;
 
 interface ProductManagementInterface
 {

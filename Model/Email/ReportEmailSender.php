@@ -6,10 +6,10 @@
  *  @copyright 2024.
  */
 
-namespace Bombardier\PopulateCatalog\Model\Email;
+namespace JulioBarbosa\BombardierPopulateCatalog\Model\Email;
 
-use Bombardier\PopulateCatalog\Api\Email\ReportEmailSenderInterface;
-use Bombardier\PopulateCatalog\Model\Report\ReportCsvGenerator;
+use JulioBarbosa\BombardierPopulateCatalog\Api\Email\ReportEmailSenderInterface;
+use JulioBarbosa\BombardierPopulateCatalog\Model\Report\ReportCsvGenerator;
 use Exception;
 use Magento\Framework\App\Area;
 use Magento\Framework\App\Config\ScopeConfigInterface;
@@ -26,7 +26,6 @@ use function file_get_contents;
 use function glob;
 use function is_file;
 use function unlink;
-use function var_dump;
 
 class ReportEmailSender implements ReportEmailSenderInterface
 {
@@ -73,10 +72,12 @@ class ReportEmailSender implements ReportEmailSenderInterface
     }
 
     /**
+     * Send report email and delete files
+     *
      * @return void
      * @throws CronException
      */
-    public function sendReportEmail()
+    public function sendReportEmail(): void
     {
         try {
             $templateOptions = [
@@ -126,6 +127,8 @@ class ReportEmailSender implements ReportEmailSenderInterface
     }
 
     /**
+     * Get Emails
+     *
      * @return string
      */
     private function getEmails(): string
@@ -134,6 +137,8 @@ class ReportEmailSender implements ReportEmailSenderInterface
     }
 
     /**
+     * Extract Total Products
+     *
      * @param $filePath
      * @return int
      */
@@ -145,7 +150,6 @@ class ReportEmailSender implements ReportEmailSenderInterface
         if (preg_match('/^(\d+)-/', $fileName, $matches)) {
             return (int)$matches[1];
         }
-
         return 0;
     }
 }

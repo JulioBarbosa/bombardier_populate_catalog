@@ -7,10 +7,10 @@
  *
  */
 
-namespace Bombardier\PopulateCatalog\Model;
+namespace JulioBarbosa\BombardierPopulateCatalog\Model;
 
-use Bombardier\PopulateCatalog\Api\ProductManagementInterface;
-use Bombardier\PopulateCatalog\Model\Api\Client;
+use JulioBarbosa\BombardierPopulateCatalog\Api\ProductManagementInterface;
+use JulioBarbosa\BombardierPopulateCatalog\Model\Api\Client;
 use Exception;
 use Magento\Catalog\Api\CategoryRepositoryInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;
@@ -30,7 +30,6 @@ use Magento\Framework\Registry;
 use function __;
 use function array_rand;
 use function reset;
-use function var_dump;
 
 class ProductManagement implements ProductManagementInterface
 {
@@ -95,6 +94,8 @@ class ProductManagement implements ProductManagementInterface
     }
 
     /**
+     * Fetch And Process Products
+     *
      * @return array
      * @throws CronException
      */
@@ -112,6 +113,8 @@ class ProductManagement implements ProductManagementInterface
     }
 
     /**
+     * Create Products
+     *
      * @param array $products
      * @return array
      * @throws CouldNotSaveException
@@ -150,6 +153,8 @@ class ProductManagement implements ProductManagementInterface
     }
 
     /**
+     * Felete Product
+     *
      * @param string $sku
      * @return void
      * @throws StateException
@@ -162,6 +167,8 @@ class ProductManagement implements ProductManagementInterface
     }
 
     /**
+     * Get Default Attribute Set Id
+     *
      * @return int|null
      */
     public function getDefaultAttributeSetId()

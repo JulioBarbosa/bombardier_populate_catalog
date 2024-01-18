@@ -7,10 +7,12 @@
  *
  */
 
-namespace Bombardier\PopulateCatalog\Model\Api;
+namespace JulioBarbosa\BombardierPopulateCatalog\Model\Api;
 
 use Exception;
+use Magento\Framework\Exception\CronException;
 use Magento\Framework\HTTP\Client\Curl;
+use function __;
 use function json_decode;
 
 class Client
@@ -32,7 +34,8 @@ class Client
      * Request to get data
      *
      * @param $url
-     * @return mixed|void
+     * @return mixed
+     * @throws CronException
      */
     public function fetchData($url)
     {
@@ -40,7 +43,7 @@ class Client
             $this->curlClient->get($url);
             return json_decode($this->curlClient->getBody(), true);
         } catch (Exception $exception) {
-
+            throw new CronException(__($exception->getMessage()), $exception);
         }
     }
 }

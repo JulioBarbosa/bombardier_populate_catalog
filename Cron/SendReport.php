@@ -6,9 +6,9 @@
  *  @copyright 2024.
  */
 
-namespace Bombardier\PopulateCatalog\Cron;
+namespace JulioBarbosa\BombardierPopulateCatalog\Cron;
 
-use Bombardier\PopulateCatalog\Api\Email\ReportEmailSenderInterface;
+use JulioBarbosa\BombardierPopulateCatalog\Api\Email\ReportEmailSenderInterface;
 
 class SendReport
 {
@@ -26,6 +26,8 @@ class SendReport
     }
 
     /**
+     * Send email to receives
+     *
      * @return void
      */
     public function execute()

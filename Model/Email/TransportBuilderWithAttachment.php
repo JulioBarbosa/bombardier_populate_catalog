@@ -6,7 +6,7 @@
  * @copyright 2024.
  */
 
-namespace Bombardier\PopulateCatalog\Model\Email;
+namespace JulioBarbosa\BombardierPopulateCatalog\Model\Email;
 
 use Laminas\Mime\Message;
 use Magento\Framework\Exception\LocalizedException;
@@ -86,13 +86,15 @@ class TransportBuilderWithAttachment extends TransportBuilder
     }
 
     /**
+     * Add Attachment
+     *
      * @param $content
      * @param $fileName
      * @return $this
      */
-    public function addAttachment($content, $fileName)
+    public function addAttachment($content, $fileName): self
     {
-        $attachmentPart = $this->mimePartFactory->create([
+        $this->attachments[] = $this->mimePartFactory->create([
             'content' => $content,
             'type' => 'text/csv',
             'disposition' => Mime::DISPOSITION_ATTACHMENT,
@@ -100,11 +102,12 @@ class TransportBuilderWithAttachment extends TransportBuilder
             'fileName' => $fileName
         ]);
 
-        $this->attachments[] = $attachmentPart;
         return $this;
     }
 
     /**
+     * Prepare Message
+     *
      * @throws LocalizedException
      */
     protected function prepareMessage()
@@ -128,10 +131,12 @@ class TransportBuilderWithAttachment extends TransportBuilder
     }
 
     /**
+     * Get Decoded Email Body
+     *
      * @param $emailMessage
      * @return string
      */
-    private function getDecodedEmailBody($emailMessage)
+    private function getDecodedEmailBody($emailMessage): string
     {
         if ($emailMessage->getBodyText()) {
             return quoted_printable_decode($emailMessage->getBodyText());

@@ -6,7 +6,7 @@
  *  @copyright 2024.
  */
 
-namespace Bombardier\PopulateCatalog\Api\Email;
+namespace JulioBarbosa\BombardierPopulateCatalog\Api\Email;
 
 interface ReportEmailSenderInterface
 {

@@ -9,4 +9,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Bombardier_PopulateCatalog', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'JulioBarbosa_BombardierPopulateCatalog', __DIR__);
